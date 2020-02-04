@@ -69,6 +69,12 @@ iconSize: [50,50], // size of the icon
 // create an HTML variable that will pop up with a UNC Well photo
 var customPopup = "UNC Well<br/><img src='https://static1.squarespace.com/static/57d17e77b8a79bfa4e31641d/t/58a22fd0bebafb51 6ad2404a/1487024089479/unc+well.png?format=1500w' width='100px'/>";
 
+L.geoJSON(uncwell, { // a
+pointToLayer: function (feature, latlng) { // b
+return L.marker(latlng, {icon: uncIcon});}}) // c
+.bindPopup(customPopup) // d
+.addTo(map); // 
+
 // end of script
 
 </script>
