@@ -15,6 +15,8 @@ h+drA=="
 QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw
 5lwrg=="
  crossorigin=""></script>
+ <script src = "/Users/lherbert1/Documents/20_Spring/GEOG_456/Data/leaflet_tutorial/data/old_well_4326.geojson">
+ </script>
 
  </head>
 
@@ -54,15 +56,13 @@ L.marker([35.911271, -79.049807]).addTo(map)
 // .openPopup is indicating that it should open a popup when clicked and close the rest.
 
 
+L.geoJSON(uncwell).addTo(map)
+
 // end of script
 
 </script>
 
-<script src = "/Users/lherbert1/Documents/20_Spring/GEOG_456/Data/leaflet_tutorial/data/old_well_4326.geojson">
 
-L.geoJSON(uncwell).addTo(map)
-
-</script>
 
 
 
